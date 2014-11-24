@@ -6,13 +6,17 @@ description: "Blog about my experiences as a developer, geek and father."
 baseurl:     ""
 url:         "http://codelog.climens.net"
 
+# Sitemap
+gems:
+  - jekyll-sitemap
+
 # Google analytics
 google_analytics: UA-310639-6
 
 # Optional features
 animated:           true
 show_related_posts: true
-show_post_footers:  false
+show_post_footers:  true
 
 # Social icons
 show_social_icons: true
@@ -25,6 +29,7 @@ paypal_url:
 flattr_button:
 
 # Build settings
+highlighter: rouge
 markdown:     kramdown
 #permalink:    pretty
 permalink:    /:year/:month/:day/:title/
