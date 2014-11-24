@@ -1,32 +1,33 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Marc Climent
+email:       climens@climens.net
+author:      Marc Climent
+description: "Blog about my experiences as a developer, geek and father."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://codelog.climens.net"
 
 # Google analytics
-google_analytics:
+google_analytics: UA-310639-6
 
 # Optional features
-animated:           false
-show_related_posts: false
+animated:           true
+show_related_posts: true
 show_post_footers:  false
 
 # Social icons
-show_social_icons: false
-github_username:
-twitter_username:
-google_plus_id:
-linkedin_username:
+show_social_icons: true
+github_username: mcliment
+twitter_username: climens
+google_plus_id: +MarcCliment
+linkedin_username: mcliment
 bitcoin_url:
 paypal_url:
 flattr_button:
 
 # Build settings
 markdown:     kramdown
-permalink:    pretty
-paginate:     3
+#permalink:    pretty
+permalink:    /:year/:month/:day/:title/
+paginate:     5
 sass:
   compressed: true
