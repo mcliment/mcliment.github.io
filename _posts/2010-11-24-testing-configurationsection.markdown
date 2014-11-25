@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Testing ConfigurationSection
 summary: A discussion on how a simple test on the ConfigurationSection may work but won't do it on a real environment because the way the classes are constructed
 date: 2010-11-24 16:17:15 +0100

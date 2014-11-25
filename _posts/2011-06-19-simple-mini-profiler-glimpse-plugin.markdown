@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Simple Mini Profiler Glimpse plugin
 summary: I just created my first Glimpse plugin, integration between Mininprofiler and Glimpse.
 date: 2011-06-19 18:01:35 +0200

@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Get MAC from IP address in .NET
 summary: There's not any method in the .NET standard classes to get the MAC from the IP, so I explain how to get it using Windows native dlls
 date: 2010-06-14 09:38:36 +0200

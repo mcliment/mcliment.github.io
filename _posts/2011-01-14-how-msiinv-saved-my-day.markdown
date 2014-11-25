@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: How msiinv saved my day
 summary: mssinv is a tool to manage MSI installed packages and I used it to track a problem with a package partially installed, that had to be removed with this tool
 date: 2011-01-14 12:22:31 +0100

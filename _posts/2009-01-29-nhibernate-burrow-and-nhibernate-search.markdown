@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: NHibernate Burrow and NHibernate Search
 summary: NHibernate.Search and NHibernate.Burrow can play nice together using NHibernate events instead of interceptors.
 date: 2009-01-29 11:50:38 +0100

@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Getting MIME type in .NET from file extension
 summary: Discuss some strategies on how to get MIME types and a proposes a solution based on a dictionary of known extensions
 date: 2009-10-28 15:00:49 +0100

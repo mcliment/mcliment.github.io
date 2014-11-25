@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: NHibernate Validator custom messages
 summary: The Validator comes with a set of default messages but you may need to override them using your own resources
 date: 2009-03-04 16:54:55 +0100

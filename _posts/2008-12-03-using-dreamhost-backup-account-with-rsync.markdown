@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Using Dreamhost backup account with rsync
 summary: Now that Dreamhost gives for free 50GB of backup space for thrier customers, get the most of it by using rsync and not FTP
 date: 2008-12-03 13:06:09 +0100

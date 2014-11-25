@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Install ASP.NET MVC 3 Manually
 summary: Due to some strange problems in my PC, I had to install this package manually and this is appliable to many other installers
 date: 2011-01-12 16:49:08 +0100

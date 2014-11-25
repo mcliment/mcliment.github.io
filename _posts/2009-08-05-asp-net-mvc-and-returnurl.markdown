@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: ASP.NET MVC and ReturnUrl
 summary: Some best practices to use the ReturnUrl parameter correctly in ASP.NET MVC
 author:

@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Deployment web site Zip with MsBuild and TeamCity
 summary: I needed to make a Zip file of a web site and automate it with TeamCity. I used MsBuild and some obscure tricks
 date: 2010-11-30 12:09:28 +0100

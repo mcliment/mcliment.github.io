@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Using fail2ban with nginx in Debian
 summary: fail2ban helps you fight spam and bots but comes with an Apache sample. I converted it to handle Nginx information.
 date: 2011-02-13 15:03:16 +0100

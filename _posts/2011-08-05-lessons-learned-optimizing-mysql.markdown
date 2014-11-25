@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Lessons learned optimizing MySQL
 summary: A summary of some things I discovered while trying to optimize que performance of a production MySQL server.
 date: 2011-08-05 13:41:18 +0200

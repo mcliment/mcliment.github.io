@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: Troubleshooting MSDTC, RPC and NServiceBus issues
 summary: MSDTC is rare and can cause many headaches. This is the process I followed to track down the problems I was having
 date: 2011-06-06 18:19:47 +0200

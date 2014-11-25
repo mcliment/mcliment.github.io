@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+comments: true
 title: ! 'NHibernate: Custom type is not serializable'
 summary: This is an error I encountered with custom types and may help some people looking for the solution
 date: 2010-06-10 18:02:33 +0200
