@@ -20,12 +20,12 @@ layout: default
   {{ content }}
 </article>
 
-{% if page.comments %}
-  {% include disqus_comments.html %}
-{% endif %}
-
 {% if site.show_post_footers %}
   {% include post_footer.html %}
+{% endif %}
+
+{% if page.comments %}
+  {% include disqus_comments.html %}
 {% endif %}
 
 {% if site.show_related_posts %}
