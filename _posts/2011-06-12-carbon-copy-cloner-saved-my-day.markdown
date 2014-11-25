@@ -4,7 +4,7 @@ status: publish
 published: true
 comments: true
 title: Carbon Copy Cloner saved my day
-summary: Just a gratitude post because this piece of software was extremely useful when others don't. And it was my birtday.
+summary: Just a gratitude post because this piece of software was extremely useful when others don't. And it was my birthday.
 date: 2011-06-12 23:13:43 +0200
 categories:
 - Mac

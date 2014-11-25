@@ -9,10 +9,10 @@ date: 2009-03-04 16:54:55 +0100
 categories:
 - Programming
 tags:
-- .NET
+- .net
 - i18n
-- NHibernate
-- nhibernate validator
+- nhibernate
+- validator
 ---
 After an [interesting thread in nhusers](http://groups.google.com/group/nhusers/browse_thread/thread/2b9f29d75c52dd89?hl=en), I wrote this is a small post explaining how you can create a simple interpolator for [NHibernate Validator](http://nhforge.org/wikis/validator/nhibernate-validator-1-0-0-documentation.aspx) that replaces the default messages for your customized ones and as well treats messages for your custom validators. Everything with internationalization using resources.
 

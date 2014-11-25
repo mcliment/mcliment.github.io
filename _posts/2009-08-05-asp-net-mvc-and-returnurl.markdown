@@ -5,26 +5,14 @@ published: true
 comments: true
 title: ASP.NET MVC and ReturnUrl
 summary: Some best practices to use the ReturnUrl parameter correctly in ASP.NET MVC
-author:
-  display_name: Marc Climent
-  login: climens
-  email: climens@climens.net
-  url: ''
-author_login: climens
-author_email: climens@climens.net
-wordpress_id: 227
-wordpress_url: http://codelog.climens.net/?p=227
-date: !binary |-
-  MjAwOS0wOC0wNSAwOToxMToyNyArMDIwMA==
-date_gmt: !binary |-
-  MjAwOS0wOC0wNSAwNzoxMToyNyArMDIwMA==
+date: 2009-08-05 09:11:27 +0200
 categories:
 - Programming
 tags:
-- .NET
-- ASP.NET MVC
+- .net
+- asp.net mvc
 ---
-I've seen many ASP.NET MVC samples and some of them do not honor de `ReturnUrl` parameter, rendering this unusable.
+I've seen many ASP.NET MVC samples and some of them do not honor the `ReturnUrl` parameter, rendering this unusable.
 
 Classic ASP.NET has the login form component that puts the same exact URL used to access the login page in the form action URL, preserving the `ReturnUrl` parameter and then, `FormsAuthentication.GetReturnUrl()` gets it from the `Request.QueryString` collection.
 

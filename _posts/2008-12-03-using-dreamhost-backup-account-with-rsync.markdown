@@ -4,10 +4,10 @@ status: publish
 published: true
 comments: true
 title: Using Dreamhost backup account with rsync
-summary: Now that Dreamhost gives for free 50GB of backup space for thrier customers, get the most of it by using rsync and not FTP
+summary: Now that Dreamhost gives for free 50GB of backup space for their customers, get the most of it by using rsync and not FTP
 date: 2008-12-03 13:06:09 +0100
 categories:
-- Linux
+- linux
 tags:
 - backup
 - dreamhost
@@ -40,7 +40,7 @@ Then, create a script that does the _rsync_ thing. In my case, I have this singl
 
     rsync -aP --delete --protocol=29 /mnt/photos/* bXXXXXXX@backup.dreamhost.com:photos
 
-With this, I tell _rsync_ to use archive mode (`-a`), which is quite interesting as it preserves timestamps and is recursive, and to store partial information (`-P`) in case I break the connection. Then I tell _rsync_ to delete the destination files that are not in the source (which can be dangerous if you delete something locally and want to recover it later, so I leave this option up to you). Then to use protocol version 29 (`--protocol 29`) as I discussed earlier. Finally, I tell _rsync _which is the source folder and the destination one, indicating the username and the host.
+With this, I tell _rsync_ to use archive mode (`-a`), which is quite interesting as it preserves timestamps and is recursive, and to store partial information (`-P`) in case I break the connection. Then I tell _rsync_ to delete the destination files that are not in the source (which can be dangerous if you delete something locally and want to recover it later, so I leave this option up to you). Then to use protocol version 29 (`--protocol 29`) as I discussed earlier. Finally, I tell `rsync` which is the source folder and the destination one, indicating the username and the host.
 
 And that's it. If you store this command in a `.sh` file and put it in the crontab (with `crontab -e`), you can automatically back up your valuable data to the Dreamhost backup account. My crontab settings are like this:
 

@@ -8,18 +8,17 @@ summary: fail2ban helps you fight spam and bots but comes with an Apache sample.
 date: 2011-02-13 15:03:16 +0100
 categories:
 - Linux
-- Seguridad
 tags:
 - nginx
 - spam
 - fail2ban
 - security
 ---
-Taking a look at the logwatch mails I see a common pattern of attacks, coming from China and trying to find details of my server configuration, which is something I dont like.
+Taking a look at the logwatch mails I see a common pattern of attacks, coming from China and trying to find details of my server configuration, which is something I don't like.
 
 ![fail2ban logo](/images/fail2ban-logo.jpg)
 
-Looking around I found [fail2ban](http://www.fail2ban.org/) which is a tool that does som regex matches on the server logs (sshd, httpd, authd, ...) and takes proper actions, like banning the offending IP.
+Looking around I found [fail2ban](http://www.fail2ban.org/) which is a tool that does some regex matches on the server logs (sshd, httpd, authd, ...) and takes proper actions, like banning the offending IP.
 
 I then installed fail2ban in my Debian box:
 

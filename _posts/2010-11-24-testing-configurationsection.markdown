@@ -38,4 +38,4 @@ In the tests, there's an XML file with the section and it's loaded using the [De
 
 But it's wrong. If you add the section to the `app.config` (or `web.config`) file and instead of using DeserializeSection you use [ConfigurationManager.GetSection(sectionName)](http://msdn.microsoft.com/en-us/library/system.configuration.configurationmanager.getsection.aspx), the constructor is called **before** populating the Css and Js properties so the dictionary is not created properly but as those properties return a default implementation in case there's no configuration, it seems to work, but the configured values are never loaded.
 
-This way, tests pass but it's impossible to configure the library via web.config. Anyway, in my opinion the problem is in .NET Framework because internally, GetSection should use DeserializeSection to be consistent.
+This way, tests pass but it's impossible to configure the library via `web.config`. Anyway, in my opinion the problem is in .NET Framework because internally, GetSection should use DeserializeSection to be consistent.
