@@ -7,16 +7,17 @@ layout: default
 {% assign minutes = 1 %}
 {% endif %}
 
+<div itemscope="" itemtype="http://schema.org/BlogPosting">
 <div class="post-header mb2">
-  <h1>{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span><br>
+  <h1 itemprop="name headline">{{ page.title }}</h1>
+  <span class="post-meta"><time itemprop="datePublished" datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%b %-d, %Y" }}</time></span><br>
   {% if page.update_date %}
     <span class="post-meta">Updated: {{ page.update_date | date: "%b %-d, %Y" }}</span><br>
   {% endif %}
-  <span class="post-meta small">{{ minutes }} minute read</span>
+  <span class="post-meta small" itemprop="wordCount" content="{{ content | number_of_words }}">{{ minutes }} minute read</span>
 </div>
 
-<article class="post-content">
+<article class="post-content" itemprop="articleBody">
   {{ content }}
 </article>
 
@@ -39,3 +40,4 @@ layout: default
     </div>
   {% endfor %}
 {% endif %}
+</div>
