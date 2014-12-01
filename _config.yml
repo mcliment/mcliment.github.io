@@ -1,8 +1,8 @@
 # Site settings
-title:       Marc Climent
+title:       Marc's Codelog
 email:       climens@climens.net
 author:      Marc Climent
-description: "Blog about my experiences as a developer, geek and father."
+description: "A personal blog from Marc Climent about my experiences as a developer, geek and father."
 baseurl:     ""
 url:         "http://codelog.climens.net"
 
