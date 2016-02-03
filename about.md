@@ -2,6 +2,7 @@
 layout: page
 title: About this blog
 permalink: /about/
+tags: about
 ---
 
 This blog is mostly about computing and programming. It started without a clear topic but time has driven me to [ASP.NET MVC](http://www.asp.net/mvc) and [NHibernate](http://nhforge.org/Default.aspx), tools that I use in my day-to-day work. Apart from that there's a bit of everything: design, security, general programming and any other topic I find interesting.
