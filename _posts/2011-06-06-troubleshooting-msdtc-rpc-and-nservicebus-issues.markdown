@@ -18,7 +18,7 @@ At first it seemed easy, but it's been a long distance hurdle race. At the end, 
 
 ![NServiceBus old logo](/images/nservicebus.png)
 
-First of all, my topology is the following: a client, in this case for testing purposes, my machine, which is running an ASP.NET web application and a NServiceBus host that processes all the messages. This has been configured following [the official documentation](http://docs.particular.net/) and [looking at the samples](https://github.com/Particular/NServiceBus.Msmq.Samples) (check out the full [NServiceBus source code](https://github.com/Particular/NServiceBus), you'll need it). It's a bit messy but with some trial and error you can make sense of it. There are some obscure properties that have to be googled to know what they mean.
+First of all, my topology is the following: a client, in this case for testing purposes, my machine, which is running an ASP.NET web application and a NServiceBus host that processes all the messages. This has been configured following [the official documentation](http://docs.particular.net/) and [looking at the samples](http://docs.particular.net/samples/) (check out the full [NServiceBus source code](https://github.com/Particular/NServiceBus), you'll need it). It's a bit messy but with some trial and error you can make sense of it. There are some obscure properties that have to be googled to know what they mean.
 
 Processing the messages is not trivial for the bus host. Some of them attack the database and need to use MSDTC to manage the transactions. This means that MSDTC must be up and running without problems.
 

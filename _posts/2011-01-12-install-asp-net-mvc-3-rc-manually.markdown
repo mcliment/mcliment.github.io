@@ -16,7 +16,7 @@ tags:
 
 I don't know exactly why but I can't install the MVC 3 package provided by [Web Platform Installer](http://www.microsoft.com/web/downloads/platform.aspx) nor the [standalone one](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=d2928bc1-f48c-4e95-a064-2a455a22c8f6), so I uncompressed it and tried to figure out how to install it manually.
 
-![.NET logo](http://codelog.climens.net/files/2011/01/dotnetlogo.png)
+![.NET logo](/images/dotnetlogo.png)
 
 The problem I have is with `vs10-kb2465236-x86.exe` that gives me a `failed with 0x8007066a` error. It seems to be for [enabling Razor syntax](http://support.microsoft.com/kb/2465236/en-us) but the prerequisites are Visual Studio 2010 Ultimate ENU. I have Visual Studio 2010 Professional ESN and that may be the reason or may not.
 

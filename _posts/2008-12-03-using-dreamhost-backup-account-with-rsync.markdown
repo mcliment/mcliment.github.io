@@ -34,7 +34,7 @@ In my case, I have `rsync  version 3.0.3  protocol version 30`. In that case, 
 
 After googling a little, I discovered that protocol 30 sends implicitly an -e command and the installed version in Dreamhost does not like that, because it uses protocol 29. The solution is adding `--protocol 29` to the rsync options.
 
-Then, to make the whole process automatic, you need to avoid _rsync_ asking for a password. That can be easily done following this instructions on [passwordless ssh](http://web.archive.org/web/20050908010949/http://blogs.translucentcode.org/mick/archives/000230.html). Note that you can't ssh to the remote machine but if you create a new file called `authorized_keys` locally with the contents of `id_dsa.pub` and then using the SFTP client upload it to a new folder -if not exists- called `.ssh` (don't forget the dot!). It will work like a charm.
+Then, to make the whole process automatic, you need to avoid _rsync_ asking for a password. That can be easily done following this instructions on [passwordless ssh](http://happykhan.com/shortest-passwordless-ssh-tutorial.html). Note that you can't ssh to the remote machine but if you create a new file called `authorized_keys` locally with the contents of `id_dsa.pub` and then using the SFTP client upload it to a new folder -if not exists- called `.ssh` (don't forget the dot!). It will work like a charm.
 
 Then, create a script that does the _rsync_ thing. In my case, I have this single instruction, but you can sync as many folders as you want.
 
