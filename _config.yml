@@ -6,10 +6,18 @@ description: "A personal blog from Marc Climent about my experiences as a develo
 baseurl:     ""
 url:         "http://codelog.climens.net"
 date_format: "%b %-d, %Y"
+header_pages:
+ - about.md
+ - contact.html
 
 # Google services
-google_analytics: UA-310639-6
 google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
+google_analytics: UA-310639-6
+google_tag_manager:
+# Bing services
+bing_verification:
 
 # Optional features
 animated:             true
@@ -18,10 +26,23 @@ show_post_footers:    true
 show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: false
+extended_fonts: false
+enable_anchorjs: true
+# Preview image for social media aka og:image and twitter:image
+post_preview_image: true
+
+# Facebook Page integration
+# (for instant articles and other stuff)
+fb_page: false
+fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
 disqus_shortname: climenscodelog
+
+# txtpen post comments
+# (leave blank to disable txtpen)
+txtpen_sitename:
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
@@ -31,11 +52,12 @@ facebook_comments_number: 10
 
 # Social icons
 github_username:     mcliment
+reddit_username:
 bitbucket_username:
 stackoverflow_id:    58791
 twitter_username:    climens
 skype_username:
-steam_nickname:
+steam_nickname:      craix3k
 google_plus_id:      +MarcCliment
 linkedin_username:   mcliment
 angellist_username:
@@ -43,19 +65,21 @@ medium_id:
 bitcoin_url:
 paypal_url:
 flattr_button:
+telegram_username:
+vk_id:
 
 # Post sharing icons
-show_sharing_icons: false
+show_sharing_icons: true
 # Change to 'true' to enable individual icons
 share_facebook: false
-share_twitter: false
+share_twitter: true
 share_googleplus: false
-share_linkedin: false
+share_linkedin: true
 share_digg: false
 share_tumblr: false
 share_reddit: false
 share_stumbleupon: false
-share_hackernews: false
+share_hackernews: true
 
 text:
   pagination:
@@ -88,7 +112,7 @@ text:
       sent:     'Message sent!'
       error:    'Error!'
   thanks: 'Thanks for contacting us. We will reply as soon as possible.'
-
+  og_locale: 'en_US'
 
 # Build settings
 markdown:     kramdown
@@ -97,9 +121,12 @@ redcarpet:
 permalink:    /:year/:month/:day/:title/
 paginate:     5
 sass:
-  compressed: true
-gems:
+  style: compressed
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
-exclude: [vendor]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
